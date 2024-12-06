@@ -127,10 +127,10 @@ The Erlang VM did not crash, even for 10M processes, where the operating system 
 Speculation:
 
 > It should be possible to run simultanously millions of smart contracts implemented as Erlang processes 
-> on the single node (hardware) having only 64GB memory, without swapping.
+> on the single node (hardware) having only 64GB memory, without memory swapping.
 > 
 > Assuming, that in one moment in time, not all smart contract have to be loaded into memory
-> (only some of them could be "pinned"). I speculate, that a single node could handle hundreds
+> (only some of them could be "pinned"), I speculate, that a single node could handle hundreds
 > of millions of smart contract instances.
 > 
 > Having a single blockchain node and multiple Erlang nodes running smart contracts,

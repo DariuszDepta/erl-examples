@@ -35,7 +35,7 @@ start() ->
 $ rustc --crate-type=cdylib --target=wasm32-wasip1 -o hello.wasm hello.rs
 ```
 
-Output file: `hello.wasm`, size ~1,8 MB
+Output file: `hello.wasm`, size: ~1,8 MB
 
 Optimization:
 
@@ -43,7 +43,7 @@ Optimization:
 $ wasm-opt -O4 -o helloo.wasm hello.wasm
 ```
 
-Output file: `helloo.wasm`, size ~1,5 MB
+Output file: `helloo.wasm`, size: ~1,5 MB
 
 ### Erlang
 
@@ -51,7 +51,7 @@ Output file: `helloo.wasm`, size ~1,5 MB
 $ erlc hello.erl
 ```
 
-Output file: `hello.beam`, size 720 B1
+Output file: `hello.beam`, size: 720 B
 
 ## Running
 

@@ -2,5 +2,5 @@
 
 ![The Wonderland of Analogy](./twoa.webp)
 
-| Smart Contracts written in WebAssembly | Smart Contracts written in Erlang |
-|----------------------------------------|-----------------------------------|
+| Smart Contracts in WebAssembly | vs | Smart Contracts in Erlang |
+|--------------------------------|:--:|---------------------------|

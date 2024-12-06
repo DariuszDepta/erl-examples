@@ -101,6 +101,6 @@ ok
 
 ## Key takeaways
 
-- To prepare WebAssembly binary you need to install two tools: Rust compiler with wasm targets and wasmer.
-- To prepare Erlang binary you need to install Erlang/OTP tools.
+- To build and run WebAssembly binary you need to install Rust compiler with wasm targets and wasmer.
+- To build and run Erlang binary you need to install Erlang compiler and virtual machine.
 - In case of a simple "Hello world" program, WebAssembly binary (after optimization) is 200% bigger than Erlang binary.

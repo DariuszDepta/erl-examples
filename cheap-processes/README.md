@@ -136,4 +136,8 @@ Speculation:
 > Having a single blockchain node and multiple Erlang nodes running smart contracts,
 > a single blockchain node could handle billions of smart contracts.
 
-🚀
+
+## Key takeaways
+
+- Erlang processes are really cheap and fast to spawn.
+- Millions of them fit in 32 GB RAM.

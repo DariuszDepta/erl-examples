@@ -21,6 +21,8 @@ Software Information:
 
 ## Testing and results
 
+> **6.12.2024** Santa comes to believers.
+
 ### TEST 1: starting 200k processes
 
 Erlang VM is started with the default settings, where the maximum number of processes is **262144**.
@@ -118,3 +120,20 @@ ok
 |           1_000_000 |                   2.25 µs |                 2.95 µs |            2.25 s |          2.95 s |
 |           5_000_000 |                   2.52 µs |                 3.48 µs |           12.59 s |         17.39 s |
 |          10_000_000 |                   2.80 µs |                 4.20 µs |           27.99 s |         42.03 s |
+
+Spawning a single process takes about 3µs, no matter how many of them are spawned.
+The Erlang VM did not crash, even for 10M processes, where the operating system started to swap the memory.
+
+Speculation:
+
+> It should be possible to run simultanously millions of smart contracts implemented as Erlang processes 
+> on the single node (hardware) having only 64GB memory, without swapping.
+> 
+> Assuming, that in one moment in time, not all smart contract have to be loaded into memory
+> (only some of them could be "pinned"). I speculate, that a single node could handle hundreds
+> of millions of smart contract instances.
+> 
+> Having a single blockchain node and multiple Erlang nodes running smart contracts,
+> a single blockchain node could handle billions of smart contracts.
+
+🚀

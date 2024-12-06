@@ -135,7 +135,5 @@ Speculation:
 > 
 > Having a single blockchain node and multiple Erlang nodes running smart contracts,
 > a single blockchain node could handle billions of smart contracts.
-> 
-> **This solution simply scales.**
 
 🚀
